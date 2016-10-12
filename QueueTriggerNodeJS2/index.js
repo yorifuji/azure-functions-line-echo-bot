@@ -15,7 +15,7 @@ function post_line(event)
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer {' + process.env.LINE_ACCESS_TOKEN + '}',
+            'Authorization': 'Bearer {' + process.env.LINE_CHANNEL_ACCESS_TOKEN + '}',
             'Content-Length': Buffer.byteLength(post_data)
         }
     };
